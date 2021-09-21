@@ -27,7 +27,7 @@ If you want to jump-start with Datagrok on your local machine, we recommend this
 
 3. To start up Datagrok, run this command:  
    ```
-   docker-compose up
+   docker-compose --profile localhost up
    ```  
    Datagrok will deploy a new database automatically.
    
@@ -46,7 +46,7 @@ If you want to jump-start with Datagrok on your local machine, we recommend this
    ```  
 6. You may use the following commands to comfortably continue working with the existing containers:
    ```
-   docker-compose up -d
+   docker-compose  --profile localhost up -d
    docker-compose stop
    ```
    Start in a detached mode allows running the containers in the background leaving out the logs, while the `stop`
